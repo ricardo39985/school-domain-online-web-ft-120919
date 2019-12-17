@@ -9,7 +9,7 @@ class School
   end
   def add_student(name, grade)
     if ROSTER.has_key?(grade)
-      if ROSTER[@grade].include(name) == false
+      if ROSTER[@grade].include? (name) == false
         ROSTER[grade] << name
       end
     else
