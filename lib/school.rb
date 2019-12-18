@@ -20,7 +20,7 @@ class School
   def sort
     @roster.sort. map {|hash| [hash[0], hash[1].sort]}.to_h
   end
-  def grade
+  def grade(grade)
 
   end
 end
