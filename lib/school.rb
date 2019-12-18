@@ -19,7 +19,7 @@ class School
   end
   def sort
     result = {}
-    @roster.sort. each {|hash| result[hash[0]]=hash[1]}
+    @roster.sort. each {|hash| result[hash[0]]=hash[1].sort}
     result
   end
 end
