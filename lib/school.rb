@@ -19,7 +19,7 @@ class School
   end
   def sort
     result = {}
-    @roster.sort. map {|hash| [[hash[0]], hash[1].sort]}.to_h
+    @roster.sort. map {|hash| [hash[0], hash[1].sort]}.to_h
 
   end
 end
