@@ -1,19 +1,20 @@
 # code here!
 class School
   attr_accessor :name
-  ROSTER = {}
+
   def initialize(school)
+    @roster = {}
     @school=school
   end
   def roster
-    @roster=ROSTER
+    @roster
   end
   def add_student(name, grade)
     puts "#{name} #{grade}"
-    if ROSTER.has_key?(grade)
-      ROSTER[grade].push(name)
+    if @roster.has_key?(grade)
+      @roster[grade].push(name)
     else
-      ROSTER[grade]=[name]
+      @roster[grade]=[name]
     end
   end
 end
