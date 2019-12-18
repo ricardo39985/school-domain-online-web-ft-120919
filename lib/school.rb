@@ -20,5 +20,8 @@ class School
   def sort
     @roster.sort. map {|hash| [hash[0], hash[1].sort]}.to_h
   end
+  def grade
+
+  end
 end
 school = School.new("Bayside High School")
