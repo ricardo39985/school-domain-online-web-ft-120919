@@ -5,7 +5,7 @@ class School
     @school=school
   end
   def roster
-    ROSTER
+    @roster=ROSTER
   end
   def add_student(name, grade)
     puts "#{name} #{grade}"
