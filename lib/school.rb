@@ -9,10 +9,10 @@ class School
   end
   def add_student(name, grade)
     puts "#{name} #{grade}"
-    if @roster.has_key?(grade)
-      @roster[grade].push(name)
+    if ROSTER.has_key?(grade)
+      ROSTER[grade].push(name)
     else
-      @roster[grade]=[name]
+      ROSTER[grade]=[name]
     end
   end
 end
