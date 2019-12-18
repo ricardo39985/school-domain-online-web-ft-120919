@@ -18,9 +18,7 @@ class School
     end
   end
   def sort
-    result = {}
     @roster.sort. map {|hash| [hash[0], hash[1].sort]}.to_h
-
   end
 end
 school = School.new("Bayside High School")
